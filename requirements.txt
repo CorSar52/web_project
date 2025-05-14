@@ -6,3 +6,4 @@ WTForms
 Flask-Login
 Flask-RESTful
 Werkzeug
+gunicorn
