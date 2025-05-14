@@ -3,3 +3,6 @@ Flask-SQLAlchemy
 Flask-WTF
 Flask-Uploads
 WTForms
+Flask-Login
+Flask-RESTful
+Werkzeug
