@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <h2>Articles</h2>
+    <ul class="list-group">
+        {% for article in articles %}
+            <li class="list-group-item">
+                <a href="{{ url_for('article', id=article.id) }}">{{ article.title }}</a>
+                <img src="{{ url_for('static', filename='uploads/images/' + article.image_filename) }}" alt="Image" class="img-thumbnail" width="100">
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

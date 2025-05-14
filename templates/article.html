@@ -1,0 +1,7 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <h2>{{ article.title }}</h2>
+    <p>{{ article.content }}</p>
+    <img src="{{ url_for('static', filename='uploads/images/' + article.image_filename) }}" alt="Image" class="img-fluid">
+{% endblock %}
